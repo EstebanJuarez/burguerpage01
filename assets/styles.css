@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* incio de navbar */
+.navbar {
+
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+
+
+}
+
+.nav-link {
+
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* fin de navbar */
+
+/* body */
+
+body {
+    background-color: black;
+    /* background-image: url("/assets/img/restaurante.jpg"); */
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.intro {
+    background-image: url("/assets/img/fondoburger.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.horarios {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    height: 560px;
+    transform: unset;
+    animation: animation 2s 300ms both;
+}
+
+.horarios img{
+    width: 30%;
+}
+
+
+
+@keyframes animation {
+    0%{
+        transform: translateX(-100%);
+        
+    }
+    
+}
+
+.arrow {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center
+}
+
+.arrow img {
+
+    height: 32px;
+}
+
+.primer-imagen {
+    background-image: url("/assets/img/beer.jpg");
+ 
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.segunda-imagen {
+    background-image: url("/assets/img/makingburger.jpg");
+ 
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.horarios h2,
+p {
+    color: white;
+}
+
+.menu-title {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.menu-subtitle {
+
+    background-color: rgba(0, 255, 255, 0);
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.img-comida {
+    height: 300px;
+
+}
+
+.inicio-container {
+
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.texto-primer-comida {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    max-width: 500px;
+    margin-left: 15px;
+}
+
+.texto-primer-comida h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.texto-primer-comida p {
+    color: white;
+
+}
+
+
+
+.menu-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+
+
+}
+
+.menu-container p {
+    color: white;
+    font-size: 14px;
+
+}
+
+.menu-container img {
+    max-width: 312.5px;
+    height: 250px;
+}
+
+.menu-card {
+
+    max-width: 312.5px;
+    text-align: justify;
+    background-color: rgba(63, 8, 8, 0.5);
+}
+
+.menu-card h3 {
+
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+
+@media(max-width:768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-link {
+        color: white;
+    }
+
+    .nav-menu.active {
+
+        display: flex;
+        height: 800px;
+        align-items: center;
+        align-content: center;
+        z-index: 50;
+        background-color: black;
+        left: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+
+    .menu-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+
+
+    }
+
+    .menu-card {
+        margin-top: 20px;
+    }
+}

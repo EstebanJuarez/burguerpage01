@@ -73,7 +73,7 @@ ul a {
 
 body {
     background-color: black;
-    /* background-image: url("/assets/img/restaurante.jpg"); */
+    /* background-image: url("../assets/img/restaurante.jpg"); */
     background-attachment: fixed;
     background-position: center;
     position: relative;
@@ -83,7 +83,7 @@ body {
 }
 
 .intro {
-    background-image: url("/assets/img/fondoburger.jpg");
+    background-image: url("../assets/img/fondoburger.jpg");
     background-attachment: fixed;
     background-position: center;
     position: relative;
@@ -132,7 +132,7 @@ body {
 }
 
 .primer-imagen {
-    background-image: url("/assets/img/beer.jpg");
+    background-image: url("../assets/img/beer.jpg");
  
     background-attachment: fixed;
     background-position: center;
@@ -141,7 +141,7 @@ body {
     background-size: cover;
 }
 .segunda-imagen {
-    background-image: url("/assets/img/makingburger.jpg");
+    background-image: url("../assets/img/makingburger.jpg");
  
     background-attachment: fixed;
     background-position: center;
